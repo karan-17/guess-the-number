@@ -67,14 +67,12 @@ document.querySelector('.check').addEventListener('click', function(){
         }
         else if(guess > secretNumber){
             document.querySelector('.message').textContent = 'Too High!';
-            // document.querySelector('.number').textContent = secretNumber;
             score--;
             document.querySelector('.score').textContent = score;
             document.querySelector('body').style.backgroundColor = '#222';
         }
         else if(guess < secretNumber){
             document.querySelector('.message').textContent = 'Too Low!';
-            // document.querySelector('.number').textContent = secretNumber;
             score--;
             document.querySelector('.score').textContent = score;
             document.querySelector('body').style.backgroundColor = '#222';
